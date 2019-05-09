@@ -1,5 +1,6 @@
 # CompileTheory-SmallCompiler
 ## Implement a small compiler with Python to generate 8086 assembly code
+
 1. Run Enviroment<br>
   python2.17.13+PyQt4 (I use pycharm2016+Anaconda2+PyQt4) <br>
   <br>
