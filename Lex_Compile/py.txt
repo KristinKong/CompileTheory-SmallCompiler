@@ -1,0 +1,54 @@
+def name(a,b):
+ yeild n  #生成n返回
+ return ....
+
+for i in countdown(x):  #自减
+
+#定义栈类
+class Stack(object):      
+	def__init__(self):
+		self.stack=[]
+	def push(self,objects):
+		self.stack.append(object)
+	def pop(self):
+		return self.stack.pop()
+	def length(self):
+		return len(self.stack)
+
+del name   #删除变量或类
+
+# file : div.py
+import div   用到其他.py文件
+a,b=div.divide(x,y)
+
+#String Method
+s.find(sub [, start [,end]]) #寻找第一个出现字符串sub或者是返回-1
+s.isalpha() #是否全是字母
+s.isdigit() #是否全是数字
+s.lstrip() #除去字符串中开头的空格
+
+#文件操作类
+f = open("Input.c", 'r')
+line = f.readline()
+while line:
+    print line ,
+    line = f.readline()
+f.close()
+
+#正则表达式类
+* +	贪婪匹配最大可能字符串，加上？可使之匹配最小字符串
+
+{m,n}	重复匹配区间范围内的字符个数
+
+[]	匹配集合中的字符串
+
+|	从左到右匹配，一旦匹配到，立即停止
+
+prog=re.compile(pattern)	#将正则表达式编译到prog中
+result=prog.match(string)	#匹配字符串中的正则表达式
+re.purge()			#清空正则表达式缓存
+prog.sreach(string,startpos,endpos)	#匹配指定开始结尾字符串(anywhere)
+prog.match(string,startpos,endpos)	#
+match.pos  开始匹配的字符串的下标
+match.lastindex 上一次匹配成功的字符串的下标
+match.lastgroup 上一次匹配成功的字符串

@@ -1,0 +1,50 @@
+1	Prog->Dstr
+2	Dstr->Decl Stem
+3	Stem->Dstr
+4	Decl->int ID Type
+5	Decl->void ID Func
+6	Type->Vari
+7	Type->Func
+8	Vari->;
+9	Func->( Vpam ) Bloc
+10	Vpam->Pist
+11	Vpam->void
+12	Pist->Parm Ptem
+13	Ptem->, Pist
+14	Parm->int ID
+15	Bloc->{ Kdec Lstr }
+16	Kdec->Kvde ; Kdec
+17	Kvde->int ID
+18	Lstr->Lang Ltem
+19	Ltem->Lstr
+20	Lang->Ifla
+21	Lang->Whla
+22	Lang->Rela
+23	Lang->Asla
+24	Asla->ID = Expr ;
+25	Rela->return Rtem ;
+26	Rtem->Expr
+27	Whla->while ( Expr ) Bloc
+28	Ifla->if ( Expr ) Bloc Etem
+29	Etem->else Bloc
+30	Expr->Aexp Atem
+31	Atem->< Expr
+32	Atem-><= Expr
+33	Atem->> Expr
+34	Atem->>= Expr
+35	Atem->== Expr
+36	Atem->!= Expr
+37	Aexp->Item Itmp
+38	Itmp->+ Aexp
+39	Itmp->- Aexp
+40	Item->Fact Ftem
+41	Ftem->* Item
+42	Ftem->/ Item
+43	Fact->NUM
+44	Fact->( Expr )
+45	Fact->ID FTYP
+46	FTYP->Call
+47	Call->( Rist )
+48	Rpam->Rist
+49	Rist->Expr Rltm
+50	Rltm->, Rist
